@@ -1,4 +1,25 @@
 package com.pach.market.domain.service;
 
+import com.pach.market.domain.Purchase;
+import com.pach.market.domain.repository.PurchaseRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+
+@Service
 public class PurchaseService {
+    @Autowired
+    private PurchaseRepository purchaseRepository;
+
+    public List<Purchase> getAll(){
+        return purchaseRepository.getAll();
+    }
+
+    public Optional<Purchase> getPurchase(int purchaseId){
+        return purchaseRepository.getPurchase(purchaseId);
+    }
+
 }

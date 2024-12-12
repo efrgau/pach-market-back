@@ -1,6 +1,6 @@
 package com.pach.market.domain;
 
-public class DomainCategory {
+public class Category {
     private int categoryId;
     private String category;
     private boolean active;

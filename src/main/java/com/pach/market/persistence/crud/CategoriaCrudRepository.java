@@ -1,4 +1,8 @@
 package com.pach.market.persistence.crud;
 
-public interface CategoriaCrudRepository {
+import com.pach.market.persistence.entity.Categoria;
+import org.springframework.data.repository.CrudRepository;
+
+public interface CategoriaCrudRepository extends CrudRepository <Categoria, Integer> {
+
 }
